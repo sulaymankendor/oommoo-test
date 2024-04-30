@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+::-webkit-scrollbar {
+  @apply bg-neutral-600;
+}
+
+/* ::-webkit-scrollbar-track {
+  background-color: blue;
+} */
+
+::-webkit-scrollbar-thumb {
+  @apply bg-neutral-400;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: 00; */
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}

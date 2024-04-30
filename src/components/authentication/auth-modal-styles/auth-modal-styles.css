@@ -1,0 +1,36 @@
+table {
+  border-collapse: collapse;
+}
+td {
+  font-weight: 100;
+  padding: 10px;
+}
+td:nth-of-type(3) {
+  border-right: 1px solid black;
+}
+td:nth-of-type(1) {
+  width: 100%;
+  @apply text-gray-600;
+}
+td:nth-of-type(2) {
+  padding-right: 5vw;
+}
+td:nth-of-type(4) {
+  padding-left: 7vw;
+}
+td:nth-of-type(1) {
+  font-size: 15px;
+}
+
+.animate-auth-modal {
+  animation-name: auth-modal;
+  animation-duration: 2s;
+}
+@keyframes auth-modal {
+  0% {
+    background-color: red;
+  }
+  100% {
+    background-color: blue;
+  }
+}
