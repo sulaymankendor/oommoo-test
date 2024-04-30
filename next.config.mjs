@@ -9,10 +9,8 @@ const nextConfig = {
   //     },
   //   ],
   // },
-};
-module.exports = {
   images: {
-    domains: ["images.pexels.com", "miro.medium.com", "www.cnet.com"],
+    domains: ["https://s3-alpha-sig.figma.com"],
   },
 };
 
