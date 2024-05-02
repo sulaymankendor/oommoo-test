@@ -5,8 +5,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { Button } from "../ui/button";
 import Link from "next/link";
-// import "@/components/home-page/event-style.css";
-// import { truncateText } from "../../../utilities/truncateText";
+import { truncateText } from "../../../utilities/truncateText";
 
 function Show(props: {
   id: number;
@@ -80,14 +79,17 @@ function Show(props: {
           <div className="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-t from-black to-transport opacity-70 rounded-lg transition-all"></div>
           <div className="w-full absolute top-[40vh]">
             <div className="relative ml-2">
-              <p className="text-gray-200 capitalize font-bold relative z-10 text-[2.5vh]">
-                {props.title}
+              <p
+                className="text-gray-200 capitalize font-bold relative z-10 text-[2.5vh]"
+                title={`${props.title}`}
+              >
+                {truncateText(props.title, 3)}
               </p>
               <p
                 className="text-gray-200 relative z-10 text-[1.7vh] font-normal"
                 style={{ wordSpacing: "3px" }}
               >
-                {props.summary}
+                {truncateText(props.summary, 15)}
               </p>
             </div>
           </div>

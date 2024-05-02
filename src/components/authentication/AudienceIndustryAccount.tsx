@@ -4,12 +4,18 @@ import Minus from "@/svgs/Minus";
 import AudienceIndustryButton from "./AudienceIndustryButton";
 import { Button } from "../ui/button";
 import { useContext, useState } from "react";
-import { AuthModalSliderContext } from "./AuthenticationModal";
+import {
+  AuthModalSliderContext,
+  ResetCurrentHighlightedAccountContext,
+} from "./AuthenticationModal";
 
 function AudienceIndustryAccount() {
   const [currentHighlightedAccount, setCurrentHighlightedAccount] =
     useState("audience");
   const setAuthModalSlider = useContext(AuthModalSliderContext);
+  const ResetCurrentHighlightedAccount = useContext(
+    ResetCurrentHighlightedAccountContext
+  );
 
   return (
     <div className="w-full ml-24">
@@ -137,10 +143,13 @@ function AudienceIndustryAccount() {
         <div className="flex items-center">
           <p className="text-[13px] text-gray-600">Already a member?</p>
           <button
-            className="font-bold text-[13px] ml-1"
+            className="font-bold text-[15px] ml-1"
             onClick={() => {
               setAuthModalSlider?.setAuthModalSlider("translate-x-0");
               setCurrentHighlightedAccount("audience");
+              ResetCurrentHighlightedAccount?.setResetCurrentHighlightedAccount(
+                true
+              );
             }}
           >
             Log in

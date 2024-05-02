@@ -6,14 +6,22 @@ import { Input } from "../ui/input";
 import FacebookLogo from "@/svgs/FacebookLogo";
 import XLogo from "@/svgs/XLogo";
 import { Dispatch, SetStateAction, useContext } from "react";
-import { AuthModalSliderContext } from "./AuthenticationModal";
+import {
+  AuthModalSliderContext,
+  ResetCurrentHighlightedAccountContext,
+} from "./AuthenticationModal";
 
 function Login() {
   const setAuthModalSlider = useContext(AuthModalSliderContext);
+  const ResetCurrentHighlightedAccount = useContext(
+    ResetCurrentHighlightedAccountContext
+  );
   return (
-    <div className="w-full pl-4">
+    <div className="w-full pl-9">
       <div>
-        <p className="text-[40px] font-thin italic">Welcome Back</p>
+        <p className="text-[40px] font-thin italic text-gray-800">
+          Welcome Back
+        </p>
         <form
           onSubmit={(e) => {
             e.preventDefault();
@@ -59,9 +67,12 @@ function Login() {
       <div className="flex items-center justify-center mt-6 -mb-4 ">
         <p className="text-[14px] text-gray-600">Not a member yet?</p>
         <button
-          className="font-bold ml-1"
+          className="font-bold ml-1 text-[15px]"
           onClick={() => {
             setAuthModalSlider?.setAuthModalSlider("-translate-x-[54.5%]");
+            ResetCurrentHighlightedAccount?.setResetCurrentHighlightedAccount(
+              false
+            );
           }}
         >
           Sign Up
@@ -72,7 +83,7 @@ function Login() {
           variant={"outline"}
           className="w-full rounded-full mb-2 hover:bg-gray-200 justify-center"
         >
-          <div className="flex items-center w-[28%] justify-between">
+          <div className="flex items-center w-[28%] justify-between h-[21px]">
             <GoogleLogo />
             <p className="text-[12.5px] font-medium">Log in with Google</p>
           </div>

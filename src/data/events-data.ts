@@ -297,7 +297,7 @@ export let data: {
     id: 27,
     title: "Collateral",
     summary:
-      "Sdflkdfl sdfl djflkjsd f sdkjflkjds lfkjsl dkfjlsdj fkdf lsdfkld fldsf dsflk dfj dfsldjkf  kjdfl sjd",
+      "Sdflkdfl sdfl djflkjssijdfa d faksdjf kjsdkfj kdj fkjs dkfj kdsj fkjdskf ksdjfkl jd slkflsdkfj lksdj flkjds flkj dlkfjkldsj flk djsklfj dlksjf kldsj flkjdsklfj kdsjf kldsjf lkdsj flkjsd klfj lskdjfkjalkjdfjkldsjfl kjsdflkjskld fjlksd jflkdsj fkljs dfjkld sjfkdsjfklsd jlfkj sdljf ishdf kaj kdjf kkjdhf jadfh jsfkj sdjh fjkahs djkfh kjsd fkjshd fjkhdskf skdf kjshdf kjhsd kfjd fsudifidufiao d fajdksflj sdjf lsldkfj ksjd flkjsd lkfjakls djfkjs dfklj skldjf lksjd fkljsd klfjklsdj flkjs dflkjsalkdfj lkdj fkljd flkjs dlkfjslkd fjlds j sdkjflkjds lfkjsl dkfjlsdj fkdf lsdfkld fldsf dsflk dfj dfsldjkf  kjdfl sjd",
     eventThumbnailUrl:
       "https://s3-alpha-sig.figma.com/img/10a0/3937/018882b099ce6d5501022bba6239431f?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GY5GakIBX52uMdyA6-pNTi3xfdLzimilg-XBBwPPxS1ApWW29LyP9nkOX4y0m7HJ8Wce9ZNbcvfeZHHJddBMkgmuAor~JbD8gxhUxbrSzyBDLaHXezb7fsjTa9NtC9WwWQxMLlFb1qTjpHfxxORE2rsy116CxLsKrsnZkKK~nxOcY4ohYtY1W2MV2vxFXwf~NZka6U8SOghYyXDEaoe~q1SywAeqE3rs1bQ30Q4dNpeAwtqsSRESIdtWIbzTCoXY0SXoApAY3ovcyI9GFYrZQJillxWIpEXv4POVjAb~w9JecoqhRMMQPjEoBZkPvKwFCaeyl8N70DPOLNQsPFAKTA__",
     numberOfReviews: "4k",

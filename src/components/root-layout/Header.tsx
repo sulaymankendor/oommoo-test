@@ -21,7 +21,7 @@ function Header() {
           <Search />
           <input
             placeholder="Search"
-            className="p-[6px] rounded-full outline-none ml-3"
+            className="p-[6px] rounded-full outline-none ml-3 w-[90%]"
           />
         </div>
         <Link href="/" className="flex items-center -mt-4">

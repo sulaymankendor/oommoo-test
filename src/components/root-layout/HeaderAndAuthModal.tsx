@@ -8,7 +8,7 @@ export const ShowAuthenticationModalContext = createContext<{
 } | null>(null);
 
 function HeaderAndAuthModal() {
-  const [showAuthenticationModal, setShowAuthenticationModal] = useState(true);
+  const [showAuthenticationModal, setShowAuthenticationModal] = useState(false);
   return (
     <>
       <ShowAuthenticationModalContext.Provider

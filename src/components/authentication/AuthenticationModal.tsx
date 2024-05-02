@@ -2,25 +2,27 @@ import React, { createContext, useState } from "react";
 import AudienceIndustryAccount from "./AudienceIndustryAccount";
 import Login from "./Login";
 import { useBodyScrollLock } from "../../../utilities/lockscroll";
+import AudienceSignUp from "./AudienceSignUp";
+import "@/components/authentication/auth-modal-styles/auth-modal-styles.css";
 
 export const AuthModalSliderContext = createContext<null | {
   setAuthModalSlider: React.Dispatch<React.SetStateAction<string>>;
 }>(null);
 
 export const ResetCurrentHighlightedAccountContext = createContext<null | {
-  resetCurrentHighlightedAccount: boolean;
+  resetCurrentHighlightedAccount: undefined | boolean;
   setResetCurrentHighlightedAccount: React.Dispatch<
-    React.SetStateAction<boolean>
+    React.SetStateAction<undefined | boolean>
   >;
 }>(null);
 function AuthenticationModal() {
   useBodyScrollLock();
   const [authModalSlider, setAuthModalSlider] = useState("translate-x-0");
   const [resetCurrentHighlightedAccount, setResetCurrentHighlightedAccount] =
-    useState(false);
+    useState<undefined | boolean>(undefined);
 
   return (
-    <div className="bg-white fixed top-[11vh] left-[25vw] w-[50vw] rounded-xl p-8 z-30 overflow-x-hidden">
+    <div className="hide-scroll-bar bg-white h-[87vh] fixed top-[3vh] left-[25vw] w-[50vw] rounded-xl p-8 z-30 overflow-x-hidden">
       <div
         className={`flex items-center w-[200%] ${authModalSlider} transition-transform`}
       >
@@ -33,8 +35,9 @@ function AuthenticationModal() {
               setResetCurrentHighlightedAccount,
             }}
           >
-            <Login />
-            <AudienceIndustryAccount />
+            {/* <Login /> */}
+            {/* <AudienceIndustryAccount /> */}
+            <AudienceSignUp />
           </ResetCurrentHighlightedAccountContext.Provider>
         </AuthModalSliderContext.Provider>
       </div>

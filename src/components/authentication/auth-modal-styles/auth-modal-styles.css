@@ -22,15 +22,19 @@ td:nth-of-type(1) {
   font-size: 15px;
 }
 
-.animate-auth-modal {
-  animation-name: auth-modal;
-  animation-duration: 2s;
+/* .disable-scroll-bar {
+  scrollbar-width: none;
+} */
+
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
 }
-@keyframes auth-modal {
-  0% {
-    background-color: red;
-  }
-  100% {
-    background-color: blue;
-  }
+
+select {
+  appearance: none;
+  background-image: url("../../../svgs/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 5% top 50%;
+  background-size: 0.65rem auto;
+  background-color: white;
 }
